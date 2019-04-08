@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+	<meta charset="UTF-8">
+	<title>RPS GAME</title>
+
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+   
+	<!-- Bootstrap CDN-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<!-- Firebase Reference -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body style="background-color: lightcoral">
+
+		<div class="container">
+		
+			  
+				<!-- Modal -->
+				<div class="modal fade" id="myModal" role="dialog">
+				  <div class="modal-dialog">
+				  
+					<!-- Modal content-->
+					<div class="modal-content">
+					  <div class="modal-header">
+						<button type="button" id="start" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Enter your Name</h4>
+					  </div>
+
+					  <div class="modal-body">
+							<label for="player1">Player Name</label>
+							<input type="text" maxlength="15" class="form-control" id="player1"  placeholder="Your Name">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Start!</button>
+					  </div>
+				
+					</div>
+					
+				  </div>
+				</div>
+				
+			  </div>
+
+
+	<div class="jumbotron">
+			<h1 class="text-center">RPS GAME</h1>
+		</div>
+
+		<div class="container" style="background-color: lightgrey;border-radius: 10px"> <!-- If Needed Left and Right Padding in 'md' and 'lg' screen means use container class -->
+            <div class="row">
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                   <h1 style="text-align: center" id="myname">Player1</h1>
+				</div>
+				
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+						<h1 style="text-align: center" id="player2">Player 2</h1>
+                </div>
+			</div>
+			
+				<div class="row">
+					<div class="text-center col-xs-6 col-sm-6 col-md-6 col-lg-6">
+							<img id="myimage" src="assets/images/loading.gif">
+						
+					</div>
+					
+					<div class="text-center col-xs-6 col-sm-6 col-md-6 col-lg-6">
+							<img id="rivalimage" src="assets/images/loading.gif">
+					</div>
+				</div>
+
+				
+
+				<div class="row">
+						<div class="text-center col-xs-6 col-sm-6 col-md-6 col-lg-6">
+								<div  style="border-radius:10px;display: block;width: 100px;height: 100px; background-color: red;margin:auto auto 15px;text-align: center;"><h1 id="mycounter" style="color:white;font-weight: 400;  line-height: 100px;">0</h1></div>
+							
+						</div>
+						
+						<div class="text-center col-xs-6 col-sm-6 col-md-6 col-lg-6">
+								<div  style="border-radius:10px;display: block;width: 100px;height: 100px; background-color: red;margin:auto auto 15px;text-align: center;"><h1 id="rivalcounter" style="color:white;font-weight: 400;  line-height: 100px;">0</h1></div>
+						</div>
+					</div>
+
+
+        </div>
+			
+
+		<footer class="footer mt-auto py-3">
+				<div class="container" >
+						<button type="button" id="rock" class="btn btn-primary choosebtn"><img src="assets/images/rock.png" style="height: 50px;"></button>
+						<button type="button" id="paper" class="btn btn-primary choosebtn"><img src="assets/images/paper.png" style="height: 50px;"></button>
+						<button type="button" id="scissor" class="btn btn-primary choosebtn"><img src="assets/images/scissor.png" style="height: 50px;"></button>
+
+				</div>
+			  </footer>
+
+	<script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+	<!-- JavaScript -->
+	<script src="assets/javascript/app.js"></script>
+
+</body>
+
+</html>
